@@ -3,19 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Học Từ Vựng Tiếng Hàn</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Bắt buộc cho iPhone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Korean Vocab">
+
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1>📘 Học Từ Vựng Tiếng Hàn</h1>
 
   <div id="card">
-    <h2 id="korean">안녕하세요</h2>
-    <p id="meaning">Xin chào</p>
-    <button onclick="speak()">🔊 Phát âm</button>
-    <button onclick="nextWord()">➡️ Từ tiếp theo</button>
+    <div id="korean"></div>
+    <div id="meaning"></div>
   </div>
 
+  <button id="speakBtn">🔊 Phát âm</button>
+  <button id="nextBtn">➡️ Từ tiếp theo</button>
+
   <script src="app.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 </body>
 </html>
