@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var resetBtn = document.getElementById("resetBtn");
 
     function getUnlearnedWords() {
-        return words.filter(w => memoryData[w.id] !== "known");
+        return words.filter(w => memoryData[w.ko] !== "known");
     }
 
     function showWord() {
@@ -25,13 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        // Chọn ngẫu nhiên từ chưa học
         var word = remainingWords[Math.floor(Math.random() * remainingWords.length)];
         korean.textContent = word.ko;
         vietnamese.textContent = word.vi;
 
-        if (memoryData[word.id] === "known") statusText.textContent = "✅ Remembered";
-        else if (memoryData[word.id] === "unknown") statusText.textContent = "❌ Not Remembered";
+        if (memoryData[word.ko] === "known") statusText.textContent = "✅ Remembered";
+        else if (memoryData[word.ko] === "unknown") statusText.textContent = "❌ Not Remembered";
         else statusText.textContent = "🤔 Unmarked";
 
         updateProgress();
@@ -39,11 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function saveWordStatus(status) {
         var currentKo = korean.textContent;
-        var word = words.find(w => w.ko === currentKo);
-        if (!word) return;
-        memoryData[word.id] = status;
+        if (!currentKo) return;
+        memoryData[currentKo] = status;
         localStorage.setItem("memoryData", JSON.stringify(memoryData));
-        showWord(); // Hiển thị từ mới ngay lập tức
+        showWord();
     }
 
     function updateProgress() {
