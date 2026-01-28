@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Học Từ Vựng Tiếng Hàn</title>
-
-  <!-- Bắt buộc cho iPhone -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Korean Vocab">
-
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Learn Korean Vocabulary</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>📘 Học Từ Vựng Tiếng Hàn</h1>
+    <h1>Learn Korean Vocabulary</h1>
 
-  <div id="card">
-    <div id="korean"></div>
-    <div id="meaning"></div>
-  </div>
+    <div id="word-container">
+        <p id="korean">Từ tiếng Hàn</p>
+        <p id="vietnamese">Nghĩa tiếng Việt</p>
+        <p id="statusText">Trạng thái</p>
+        <p id="progress">Tiến độ</p>
+    </div>
 
-  <button id="speakBtn">🔊 Phát âm</button>
-  <button id="nextBtn">➡️ Từ tiếp theo</button>
+    <div id="buttons">
+        <button id="nextBtn">⏭️ Next</button>
+        <button id="knownBtn">✅ Remembered</button>
+        <button id="unknownBtn">❌ Not Remembered</button>
+        <button id="resetBtn">🔄 Reset</button>
+    </div>
 
-  <script src="app.js"></script>
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("service-worker.js");
-    }
-  </script>
+    <script src="words.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
