@@ -1,48 +1,69 @@
-var words = [
-  { ko: "안녕하세요", vi: "Xin chào" },
-  { ko: "감사합니다", vi: "Cảm ơn" },
-  { ko: "사랑", vi: "Tình yêu" },
-  { ko: "학교", vi: "Trường học" }
-];
+document.addEventListener("DOMContentLoaded", function() {
+    var words = WORDS;
+    var memoryData = JSON.parse(localStorage.getItem("memoryData")) || {};
 
-var index = 0;
-var showing = "ko";
+    var korean = document.getElementById("korean");
+    var vietnamese = document.getElementById("vietnamese");
+    var statusText = document.getElementById("statusText");
+    var progressText = document.getElementById("progress");
 
-var korean = document.getElementById("korean");
-var meaning = document.getElementById("meaning");
-var card = document.getElementById("card");
+    var knownBtn = document.getElementById("knownBtn");
+    var unknownBtn = document.getElementById("unknownBtn");
+    var resetBtn = document.getElementById("resetBtn");
 
-function showWord() {
-  korean.textContent = words[index].ko;
-  meaning.textContent = words[index].vi;
-  korean.style.display = "block";
-  meaning.style.display = "none";
-  showing = "ko";
-}
+    function getUnlearnedWords() {
+        return words.filter(w => memoryData[w.id] !== "known");
+    }
 
-card.addEventListener("click", function () {
-  if (showing === "ko") {
-    korean.style.display = "none";
-    meaning.style.display = "block";
-    showing = "vi";
-  } else {
+    function showWord() {
+        var remainingWords = getUnlearnedWords();
+        if (remainingWords.length === 0) {
+            korean.textContent = "🎉 You have finished learning all the words!";
+            vietnamese.textContent = "";
+            statusText.textContent = "";
+            progressText.textContent = "Remembered: " + words.length + " / " + words.length + " (100%)";
+            return;
+        }
+
+        // Chọn ngẫu nhiên từ chưa học
+        var word = remainingWords[Math.floor(Math.random() * remainingWords.length)];
+        korean.textContent = word.ko;
+        vietnamese.textContent = word.vi;
+
+        if (memoryData[word.id] === "known") statusText.textContent = "✅ Remembered";
+        else if (memoryData[word.id] === "unknown") statusText.textContent = "❌ Not Remembered";
+        else statusText.textContent = "🤔 Unmarked";
+
+        updateProgress();
+    }
+
+    function saveWordStatus(status) {
+        var currentKo = korean.textContent;
+        var word = words.find(w => w.ko === currentKo);
+        if (!word) return;
+        memoryData[word.id] = status;
+        localStorage.setItem("memoryData", JSON.stringify(memoryData));
+        showWord(); // Hiển thị từ mới ngay lập tức
+    }
+
+    function updateProgress() {
+        var knownCount = Object.values(memoryData).filter(v => v === "known").length;
+        var total = words.length;
+        progressText.textContent = "Remembered: " + knownCount + " / " + total +
+            " (" + Math.round((knownCount / total) * 100) + "%)";
+    }
+
+    function resetData() {
+        if (confirm("Are you sure start learning again?")) {
+            memoryData = {};
+            localStorage.setItem("memoryData", JSON.stringify(memoryData));
+            showWord();
+        }
+    }
+
+    knownBtn.addEventListener("click", function() { saveWordStatus("known"); });
+    unknownBtn.addEventListener("click", function() { saveWordStatus("unknown"); });
+    resetBtn.addEventListener("click", resetData);
+
     showWord();
-  }
 });
-
-document.getElementById("nextBtn").onclick = function () {
-  index = (index + 1) % words.length;
-  localStorage.setItem("wordIndex", index);
-  showWord();
-};
-
-document.getElementById("speakBtn").onclick = function () {
-  var u = new SpeechSynthesisUtterance(words[index].ko);
-  u.lang = "ko-KR";
-  speechSynthesis.speak(u);
-};
-
-var saved = localStorage.getItem("wordIndex");
-if (saved) index = parseInt(saved, 10);
-
-showWord();
