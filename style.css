@@ -4,29 +4,38 @@ body {
     padding: 40px;
 }
 
-/* Tiêu đề chính */
+/* Tiêu đề */
 h1 {
     font-size: 120px;
     color: red;
     margin-bottom: 50px;
-    line-height: 1.1;
 }
 
-/* Các dòng trong word container */
+/* Khoảng cách */
 #word-container p {
     margin: 20px 0;
 }
 
-/* Tiếng Hàn */
+/* Từ Hàn (mặt trước) */
 #korean {
     font-size: 200px;
     font-weight: bold;
 }
 
-/* Nghĩa tiếng Việt */
+.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Nghĩa (mặt sau) */
 #vietnamese {
     font-size: 150px;
     color: #555;
+}
+
+/* Ẩn nghĩa */
+.hidden {
+    display: none;
 }
 
 /* Trạng thái */
@@ -38,10 +47,9 @@ h1 {
 /* Tiến độ */
 #progress {
     font-size: 50px;
-    margin-top: 20px;
 }
 
-/* Nút bấm */
+/* Nút */
 #buttons button {
     font-size: 40px;
     margin: 10px;
