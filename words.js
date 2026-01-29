@@ -5,7 +5,23 @@ var WORDS = [
 {ko:"가짜", vi:"Fake"},
 {ko:"가격", vi:"Price"},
 {ko:"가족", vi:"Family"},
+{ko:"한글", vi:"Korean alphabet"},
+{ko:"소개", vi:"Introduction"},
+{ko:"단원", vi:"Unit / Lesson"},
+{ko:"주제", vi:"Topic"},
+{ko:"학습", vi:"Learning / Study"},
+{ko:"활동", vi:"Activity"},
+{ko:"문법", vi:"Grammar"},
+{ko:"문화", vi:"Culture"},
+{ko:"군", vi:"Military / Army"},
+{ko:"관련", vi:"Related"},
 
+{ko:"어휘", vi:"Vocabulary"},
+{ko:"모음", vi:"Vowel"},
+{ko:"자음", vi:"Consonant"},
+{ko:"받침", vi:"Final consonant (batchim)"},
+{ko:"당근", vi:"Carrot"},
+{ko:"마늘", vi:"Garlic"},
 {ko:"감자", vi:"Potato"},
 {ko:"감사합니다", vi:"Thank you"},
 {ko:"강아지", vi:"Puppy"},
@@ -432,4 +448,3 @@ var WORDS = [
 {ko:"지하철역", vi:"Ga tàu điện"},
 {ko:"매점", vi:"Small Store"}
 ];
-
