@@ -6,7 +6,7 @@ body {
 
 /* Tiêu đề chính */
 h1 {
-    font-size: 120px;   /* đã giảm từ 300px xuống 180px */
+    font-size: 120px;
     color: red;
     margin-bottom: 50px;
     line-height: 1.1;
