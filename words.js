@@ -1,5 +1,60 @@
 var WORDS = [
-{ko:"계급", vi:"Rank"},
+{ko:"장갑차", vi:"Armored Vehicle/xe bọc thép"}
+  {ko:"자주포", vi:"Self-Propelled Artillery/ Pháo tự hành"}
+
+  {ko:"세탁 비누", vi:"Laundry Soap"}
+{ko:"세탁 세제", vi:"Laundry Detergent/ Xà phòng giặt"}
+{ko:"주방 세제", vi:"Dishwashing Liquid/ Nước rửa chén"}
+{ko:"물티슈", vi:"Wet Wipes/ Khăn ướt"}
+{ko:"냉동실", vi:"Freezer Compartment/ Ngăn đông"}
+{ko:"냉장실", vi:"Refrigerator Compartment/ Ngăn mát"}
+{ko:"그릇", vi:"Rice Bowl"}
+{ko:"접시", vi:"Plate/ Đĩa"}
+{ko:"냄비", vi:"Pot/ Nồi"}
+{ko:"전기밥솥", vi:"Rice Cooker/ Nồi cơm điện"}
+{ko:"프라이팬", vi:"Frying Pan/ Chảo chiên"}
+{ko:"도마", vi:"Cutting Board/ Thớt"}
+{ko:"선풍기", vi:"Electric Fan"}
+{ko:"사용하다", vi:"To Use"}
+{ko:"인사하다", vi:"To Greet"}
+{ko:"이해하다", vi:"To Understand"}
+{ko:"자기", vi:"Yourself"}
+
+{ko:"족장", vi:"Tribal Chief/ Tộc trưởng"}
+{ko:"반장", vi:"Lớp trưởng"}
+{ko:"관리자", vi:"Manager / QUản lý"}
+{ko:"장교", vi:"Officer"}
+{ko:"조종사", vi:"Pilot"}
+{ko:"조종하다", vi:"To Control"}
+{ko:"운전하다", vi:"To Drive"}
+{ko:"운전면허증", vi:"Driver’s License"}
+{ko:"쇼핑하다", vi:"To Shop"}
+{ko:"구매하다", vi:"To Shop/ Dùng trang trọng"}
+
+{ko:"표", vi:"Ticket"}
+
+{ko:"사무실", vi:"Office"}
+{ko:"묻다", vi:"To Ask/To Bury/Hỏi/Chôn"}
+{ko:"솟다", vi:"To Rise/To Spring Up"}
+{ko:"같다", vi:"To Be The Same/"}
+{ko:"국방", vi:"National Defense"}
+{ko:"학원", vi:"Private Academy"}
+{ko:"과학", vi:"Science"}
+{ko:"찌르다", vi:"Đâm, chọc bằng vật nhọn"}
+{ko:"고추", vi:"Chili/ Ớt"}
+{ko:"후주", vi:"Pepper"}
+
+{ko:"선글라스", vi:"Sunglasses"}
+{ko:"아저씨", vi:"Uncle (informal)"}
+{ko:"삼촌", vi:"Uncle/ Chưa lấy vợ"}
+{ko:"이모", vi:"Aunt (mother’s side)"}
+{ko:"아주머니", vi:"Madam / Auntie"}
+{ko:"크다", vi:"Big / Large"}
+
+{ko:"사무소/", vi:"Office"}
+
+  
+  {ko:"계급", vi:"Rank"},
 {ko:"군종", vi:"Branch of military/ Quân chủng"},
 {ko:"처음", vi:"First / Beginning"},
 {ko:"인사", vi:"Greeting / Personnel"},
