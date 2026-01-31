@@ -1,4 +1,8 @@
 var WORDS = [
+{ko:"공식", vi:"Chính thức, công thức, 공식 명칭: tên chính thức, 수학 공식: công thức toán học"},
+{ko:"명칭", vi:"Tên gọi, danh xưng (trang trọng), 이 제품의 명칭은 무엇입니까?/Tên gọi của sản phẩm này là gì?"},
+{ko:"이름", vi:"Tên/이 사람 이름이 뭐예요?/Người này tên gì?"},
+{ko:"성함", vi:"Tên (kính ngữ, dùng lịch sự)/성함이 어떻게 되세요?/Quý danh của ngài là gì?"},
 {ko:"엄청", vi:"Rất, cực kỳ"},
 {ko:"예약하다", vi:"Đặt trước, đặt chỗ"},
 {ko:"미리", vi:"Trước, заранее"},
