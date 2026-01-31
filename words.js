@@ -96,7 +96,7 @@ var WORDS = [
 {ko:"표", vi:"Ticket"},
 {ko:"사무실/사무소", vi:"Office"},
 {ko:"묻다", vi:"To Ask/To Bury/Hỏi/Chôn"},
-{ko:"솟다", vi:"To Rise/To Spring Up"},
+{ko:"솟다", vi:"từ dưới → vọt / trồi lên. Dùng cho nước, mầm cây, cảm xúc, ý tưởng/새싹이 땅에서 솟다/Mầm non mọc lên từ đất/온천이 여기저기서 솟는다/Suối nước nóng trồi lên khắp nơi"},
 {ko:"같다", vi:"To Be The Same/"},
 {ko:"국방", vi:"National Defense"},
 {ko:"학원", vi:"Private Academy"},
