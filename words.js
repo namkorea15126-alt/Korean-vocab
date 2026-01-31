@@ -5,7 +5,7 @@ var WORDS = [
 {ko:"성함", vi:"Tên (kính ngữ, dùng lịch sự)/성함이 어떻게 되세요?/Quý danh của ngài là gì?"},
 {ko:"엄청", vi:"Rất, cực kỳ"},
 {ko:"예약하다", vi:"Đặt trước, đặt chỗ"},
-{ko:"미리", vi:"Trước, заранее"},
+{ko:"미리", vi:"Trước"},
 {ko:"이런", vi:"Như thế này"},
 {ko:"화나다", vi:"Tức giận"},
 {ko:"요즘", vi:"Dạo này"},
