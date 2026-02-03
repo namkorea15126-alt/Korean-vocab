@@ -1,11 +1,11 @@
 var WORDS = [
 {ko:"소대장", vi:"Trung đội trưởng, Platoon leader"},
 {ko:"체력 단련실", vi:"Phòng tập thể lực, Gym"},
-{ko:"연병장", vi:"Sân tập quân sự, Parade ground"},
+{ko:"연병장", vi:"Sân điều lệnh, Parade ground"},
 {ko:"군복", vi:"Quân phục, Military uniform"},
-{ko:"군장", vi:"Trang bị quân đội, Military gear"},
-{ko:"근무모", vi:"Mũ trực quân đội, Duty cap"},
-{ko:"전투화", vi:"Giày chiến đấu, Combat boots"},
+{ko:"군장", vi:"Quân trang, Military gear"},
+{ko:"근무모", vi:"Mũ rằn ri, Duty cap"},
+{ko:"전투화", vi:"Bốt, Combat boots"},
 {ko:"견인포", vi:"Pháo kéo, Towed artillery"},
 {ko:"박격포", vi:"Súng cối, Mortar"},
 
