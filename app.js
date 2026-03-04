@@ -11,18 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var unknownBtn = document.getElementById("unknownBtn");
     var resetBtn = document.getElementById("resetBtn");
 
-    var audio = document.getElementById("audio");
     var currentWord = null;
+    var lastWord = null;
+
+    /* 🔊 TEXT TO SPEECH */
+    function speakKorean(text) {
+        if (!("speechSynthesis" in window)) return;
+
+        speechSynthesis.cancel(); // ngắt giọng cũ
+        var utter = new SpeechSynthesisUtterance(text);
+        utter.lang = "ko-KR";
+        utter.rate = 0.9;   // tốc độ
+        utter.pitch = 1.0;  // cao độ
+        speechSynthesis.speak(utter);
+    }
 
     function getUnlearnedWords() {
         return words.filter(w => memoryData[w.ko] !== "known");
-    }
-
-    function playAudio(word) {
-        if (!word.audio) return;
-        audio.src = word.audio;
-        audio.currentTime = 0;
-        audio.play().catch(() => {});
     }
 
     function showWord() {
@@ -38,21 +43,22 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        currentWord =
-            remainingWords[Math.floor(Math.random() * remainingWords.length)];
+        do {
+            currentWord =
+                remainingWords[Math.floor(Math.random() * remainingWords.length)];
+        } while (lastWord && currentWord.ko === lastWord.ko && remainingWords.length > 1);
+
+        lastWord = currentWord;
 
         korean.textContent = currentWord.ko;
         vietnamese.textContent = currentWord.vi;
-        vietnamese.classList.add("hidden"); // ẨN nghĩa khi sang từ mới
+        vietnamese.classList.add("hidden");
 
-        if (memoryData[currentWord.ko] === "known")
-            statusText.textContent = "✅ Remembered";
-        else if (memoryData[currentWord.ko] === "unknown")
-            statusText.textContent = "❌ Not Remembered";
-        else statusText.textContent = "🤔 Unmarked";
-
+        statusText.textContent = "🤔 Unmarked";
         updateProgress();
-        playAudio(currentWord); // 🔊 tự phát khi hiện từ
+
+        /* 🔊 ĐỌC NGAY KHI HIỆN TỪ */
+        speakKorean(currentWord.ko);
     }
 
     function saveWordStatus(status) {
@@ -78,9 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // 👆 CLICK VÀO TỪ HÀN → HIỆN NGHĨA
+    /* CLICK VÀO TỪ → ĐỌC LẠI + HIỆN NGHĨA */
     korean.addEventListener("click", function () {
         vietnamese.classList.toggle("hidden");
+        speakKorean(korean.textContent);
     });
 
     knownBtn.addEventListener("click", function () {
@@ -92,6 +99,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     resetBtn.addEventListener("click", resetData);
+
+    /* PHÍM TẮT */
+    document.addEventListener("keydown", function (e) {
+        if (!currentWord) return;
+
+        if (e.key === " ") {
+            e.preventDefault();
+            vietnamese.classList.toggle("hidden");
+            speakKorean(currentWord.ko);
+        }
+        if (e.key === "ArrowRight") saveWordStatus("known");
+        if (e.key === "ArrowLeft") saveWordStatus("unknown");
+    });
 
     showWord();
 });
