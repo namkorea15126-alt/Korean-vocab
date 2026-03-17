@@ -2,10 +2,10 @@ var WORDS = [
 
 
 {ko:"설명", vi:"Sự giải thích / mô tả, Explanation"},
-{ko:"설명하다", vi:"Giải thích, Explain"}
+{ko:"설명하다", vi:"Giải thích, Explain"},
 {ko:"설명서", vi:"Sách hướng dẫn, Manual"},
 {ko:"설명문", vi:"Bài giải thích, Explanatory text"},
-{ko:"설명회", vi:"Buổi giới thiệu / thuyết trình, Briefing session"}
+{ko:"설명회", vi:"Buổi giới thiệu / thuyết trình, Briefing session"},
 {ko:"가능", vi:"Khả năng / sự có thể, Possibility"},
 {ko:"가능하다", vi:"Có thể, Possible"},
 {ko:"불가능", vi:"Sự không thể, Impossibility"},
