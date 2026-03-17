@@ -16,7 +16,7 @@ var WORDS = [
 {ko:"버리다", vi:"Vứt bỏ, Throw away"},
 {ko:"상자/ 박스", vi:"Hộp, Thùng, Box"},
 {ko:"옮기다", vi:"Di chuyển / chuyển, Move / Transfer"},
-{ko:"서류", vi:"Tài liệu / giấy tờ, Documents"}
+{ko:"서류", vi:"Tài liệu / giấy tờ, Documents"},
 {ko:"규칙", vi:"Quy tắc, Rule"},
 {ko:"불규칙", vi:"Bất quy tắc, Irregularity"},
 {ko:"그동안", vi:"Trong thời gian qua, Meanwhile"},
