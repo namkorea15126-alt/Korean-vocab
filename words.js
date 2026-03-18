@@ -47,7 +47,7 @@ var WORDS = [
 {ko:"정복", vi:"Chinh phục / đồng phục (quân đội), Conquest / Uniform"},
 {ko:"총", vi:"Súng / tổng số, Gun / Total"},
 {ko:"특히", vi:"Đặc biệt, Especially"},
-{ko:"붉다", vi:"Đỏ (màu), Red"}
+{ko:"붉다", vi:"Đỏ (màu), Red"},
 
 {ko:"설명", vi:"Sự giải thích / mô tả, Explanation"},
 {ko:"설명하다", vi:"Giải thích, Explain"},
