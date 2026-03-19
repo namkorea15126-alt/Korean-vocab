@@ -4,7 +4,29 @@ var WORDS = [
 
 
 
-
+{ko:"드디어", vi:"Cuối cùng, Finally"},
+{ko:"해내다", vi:"Làm được / hoàn thành, Achieve / Accomplish"},
+{ko:"핸드백", vi:"Túi xách tay, Handbag"},
+{ko:"핸드볼", vi:"Bóng ném, Handball"},
+{ko:"정장", vi:"Âu phục / đồ vest, Suit"},
+{ko:"정장하다", vi:"Mặc đồ trang trọng, Dress formally"},
+{ko:"진짜", vi:"Thật / thật sự, Really / Truly"},
+{ko:"깔끔", vi:"Sự gọn gàng, Neatness"},
+{ko:"깔끔하다", vi:"Gọn gàng / sạch sẽ, Neat / Clean"},
+{ko:"색깔", vi:"Màu sắc, Color"},
+{ko:"재킷", vi:"Áo khoác (jacket), Jacket"},
+{ko:"그렇군요", vi:"À, ra vậy, I see"},
+{ko:"사이즈", vi:"Kích cỡ, Size"},
+{ko:"탈의실", vi:"Phòng thay đồ, Fitting room"},
+{ko:"현수막", vi:"Băng rôn / biểu ngữ, Banner"},
+{ko:"환영하다", vi:"Chào mừng, Welcome"},
+{ko:"통신", vi:"Liên lạc / viễn thông, Communication"},
+{ko:"오수", vi:"Nước thải, Wastewater"},
+{ko:"내무", vi:"Nội vụ (trong quân đội), Internal affairs"},
+{ko:"검사", vi:"Kiểm tra / kiểm tra y tế / công tố viên, Inspection / Prosecutor"},
+{ko:"검사하다", vi:"Kiểm tra, Inspect"},
+{ko:"세계", vi:"Thế giới, World"},
+{ko:"에베레스트", vi:"Núi Everest, Mount Everest"},
 
 {ko:"세우다", vi:"Dựng lên / lập / đặt, Build / Establish"},
 {ko:"다목적", vi:"Đa mục đích, Multi-purpose"},
@@ -48,7 +70,6 @@ var WORDS = [
 {ko:"총", vi:"Súng / tổng số, Gun / Total"},
 {ko:"특히", vi:"Đặc biệt, Especially"},
 {ko:"붉다", vi:"Đỏ (màu), Red"},
-
 {ko:"설명", vi:"Sự giải thích / mô tả, Explanation"},
 {ko:"설명하다", vi:"Giải thích, Explain"},
 {ko:"설명서", vi:"Sách hướng dẫn, Manual"},
@@ -78,7 +99,6 @@ var WORDS = [
 {ko:"못하다", vi:"Không thể / không giỏi, Cannot / Be bad at"},
 {ko:"따로", vi:"Riêng / riêng biệt, Separately"},
 {ko:"바로", vi:"Ngay lập tức / ngay, Right away"},
-
 {ko:"환하다", vi:"Sáng rõ, Bright"},
 {ko:"해산물", vi:"Hải sản, Seafood"},
 {ko:"햇빛", vi:"Ánh nắng, Sunlight"},
@@ -141,7 +161,6 @@ var WORDS = [
 {ko:"지내다", vi:"Trải qua / sống / ở, Spend time / Get along"},
 {ko:"별일", vi:"Chuyện đặc biệt / chuyện gì, Something unusual"},
 {ko:"그동안", vi:"Trong thời gian qua, Meanwhile / During that time"},
-
 {ko:"절대", vi:"Tuyệt đối / hoàn toàn không, Absolutely / Never"},
 {ko:"외우다", vi:"Học thuộc / ghi nhớ (thuộc lòng), Memorize"},
 {ko:"기억하다", vi:"Nhớ / ghi nhớ, Remember"},
@@ -439,7 +458,6 @@ var WORDS = [
 {ko:"부탁", vi:"Yêu cầu/ Nhờ vả, Request"},
 {ko:"제안", vi:"Đề xuất, Suggestion"},
 {ko:"의무", vi:"Nhiệm vụ, Duty / Obligation"},
-
 {ko:"가깝다", vi:"Gần, Near"},
 {ko:"걸리다", vi:"Mất (thời gian), Take (time)"},
 {ko:"교통", vi:"Giao thông, Traffic"},
@@ -510,7 +528,6 @@ var WORDS = [
 {ko:"달", vi:"Month / Moon"},
 {ko:"번", vi:"Lần,số, Time"},
 {ko:"발", vi:"Foot"},
-
 {ko:"키", vi:"Chiều cao / chìa khóa, Height / Key"},
 {ko:"계속", vi:"Liên tục, Continuously"},
 {ko:"그렇지만", vi:"However"},
