@@ -29,7 +29,7 @@ var WORDS = [
 {ko:"희망 일시", vi:"Thời gian mong muốn, Desired date/time"},
 {ko:"사유", vi:"Lý do, Reason"},
 {ko:"승인", vi:"Sự phê duyệt, Approval"},
-{ko:"담임 교관", vi:"Giáo viên chủ nhiệm / huấn luyện viên phụ trách, Homeroom instructor"}
+{ko:"담임 교관", vi:"Giáo viên chủ nhiệm / huấn luyện viên phụ trách, Homeroom instructor"},
 
 {ko:"날씬하다", vi:"Gầy / thon, Slim"},
 {ko:"뚱뚱하다", vi:"Béo, Fat"},
