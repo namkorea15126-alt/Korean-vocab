@@ -4,6 +4,25 @@ var WORDS = [
 
 
 
+
+
+
+
+
+{ko:"날씬하다", vi:"Gầy / thon, Slim"},
+{ko:"뚱뚱하다", vi:"Béo, Fat"},
+{ko:"기린", vi:"Hươu cao cổ, Giraffe"},
+{ko:"거실", vi:"Phòng khách, Living room"},
+{ko:"제일", vi:"Nhất, The most"},
+{ko:"올라가다", vi:"Đi lên, Go up"},
+{ko:"엘리베이터", vi:"Thang máy, Elevator"},
+
+{ko:"보호", vi:"Sự bảo vệ, Protection"},
+{ko:"보호하다", vi:"Bảo vệ, Protect"},
+{ko:"해제", vi:"Sự hủy bỏ /解除 / mở khóa, Release /解除 / Unlock"},
+{ko:"해제하다", vi:"Hủy bỏ / giải trừ / mở khóa, Release / Cancel / Unlock"},
+{ko:"빌리지", vi:"Làng (mượn từ tiếng Anh), Village"},
+
 {ko:"드디어", vi:"Cuối cùng, Finally"},
 {ko:"해내다", vi:"Làm được / hoàn thành, Achieve / Accomplish"},
 {ko:"핸드백", vi:"Túi xách tay, Handbag"},
