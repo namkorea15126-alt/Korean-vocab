@@ -7,7 +7,29 @@ var WORDS = [
 
 
 
-
+{ko:"침실", vi:"Phòng ngủ, Bedroom"},
+{ko:"비상", vi:"Khẩn cấp, Emergency"},
+{ko:"비상하다", vi:"Phi thường / bất thường, Extraordinary"},
+{ko:"뮤지엄", vi:"Bảo tàng (mượn), Museum"},
+{ko:"헤어", vi:"Tóc / kiểu tóc, Hair"},
+{ko:"전세계", vi:"Toàn thế giới, Worldwide"},
+{ko:"팥", vi:"Đậu đỏ, Red bean"},
+{ko:"팥빙수", vi:"Bingsu đậu đỏ, Red bean shaved ice"},
+{ko:"점원", vi:"Nhân viên bán hàng, Clerk"},
+{ko:"신청서", vi:"Đơn đăng ký, Application form"},
+{ko:"성명", vi:"Họ tên, Full name"},
+{ko:"서명", vi:"Chữ ký, Signature"},
+{ko:"결석", vi:"Vắng mặt, Absence"},
+{ko:"조퇴", vi:"Về sớm, Early leave"},
+{ko:"결강", vi:"Nghỉ học (không có lớp), Class cancellation"},
+{ko:"지각", vi:"Đi muộn, Lateness"},
+{ko:"해당란에 ○표", vi:"Đánh dấu vào ô tương ứng, Check the relevant box"},
+{ko:"사후", vi:"Sau đó, After"},
+{ko:"신청자", vi:"Người đăng ký, Applicant"},
+{ko:"희망 일시", vi:"Thời gian mong muốn, Desired date/time"},
+{ko:"사유", vi:"Lý do, Reason"},
+{ko:"승인", vi:"Sự phê duyệt, Approval"},
+{ko:"담임 교관", vi:"Giáo viên chủ nhiệm / huấn luyện viên phụ trách, Homeroom instructor"}
 
 {ko:"날씬하다", vi:"Gầy / thon, Slim"},
 {ko:"뚱뚱하다", vi:"Béo, Fat"},
